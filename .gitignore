@@ -1,0 +1,8 @@
+# Secret configuration files
+.env
+
+# Installed dependencies
+node_modules/
+
+# TypeScript output folder
+dist/
