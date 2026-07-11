@@ -32,7 +32,7 @@ A RESTful API for managing inventory items built with Node.js, Express, TypeScri
 1. Clone the repository:
 
 ```bash
-git clone <[nodeInverntoryApp](https://github.com/General4904/nodeInventoryApp)>
+git clone https://github.com/General4904/nodeInventoryApp
 cd nodeInventoryApp
 ```
 
