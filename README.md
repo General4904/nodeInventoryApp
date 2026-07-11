@@ -9,6 +9,7 @@ A RESTful API for managing inventory items built with Node.js, Express, TypeScri
 - **Item Tracking**: Track item details including manufacturer, model, serial number, and quantity
 - **Condition Monitoring**: Monitor item conditions (Operational, Maintenance Due, Under Repair, etc.)
 - **Service History**: Record last service dates for maintenance tracking
+- **Static File Serving**: Serve frontend assets from the public directory so the app can expose a web UI at the root URL
 - **Error Handling**: Comprehensive error handling and validation
 
 ## Tech Stack
@@ -55,6 +56,7 @@ MONGODB_URI=mongodb://localhost:27017/inventory
 
 ```
 nodeInventoryApp/
+├── public/                  # Static frontend assets served by Express
 ├── src/
 │   ├── index.ts              # Application entry point
 │   ├── item.model.ts         # Mongoose schema and interfaces
@@ -64,6 +66,8 @@ nodeInventoryApp/
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # This file
 ```
+
+The app serves files from the public directory, so visiting the app root will load the static frontend assets.
 
 ## API Endpoints
 
