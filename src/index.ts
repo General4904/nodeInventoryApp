@@ -1,9 +1,9 @@
-import { configDotenv } from "dotenv";
+import dotenv from "dotenv";
 import express from "express";
 import mongoose, { mongo } from "mongoose";
 import itemRoutes from "./items.routes.js";
 
-configDotenv();
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT;
